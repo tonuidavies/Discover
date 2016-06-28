@@ -1,3 +1,3 @@
 # Discover
 Using discover flask tutorials to learn flask
-email mail here (tonuidavies)[tonuidavies@gmail.com]
+email mail here [Davies Tonui](tonuidavies@gmail.com)
