@@ -1,0 +1,34 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal</title>
+    <link rel="stylesheet" href="static/css/foundation.css">
+    <link rel="stylesheet" href="static/css/app.css">
+  
+</head>
+  <body>
+  <div class="row">
+  <div class="container">
+  <!-- child template -->
+
+  {% block content %}{% endblock %}
+  <!-- errors -->
+  {% if error %}
+  <p class="error"><strong>Error:</strong>{{erro}}</p>
+  {% endif %}
+  <!-- message -->
+  {% for message in get_flashed_messages() %} 
+  {{message}}
+  {% endfor %}
+  
+  
+   <script src="static/js/vendor/jquery.js"></script>
+    <script src="static/js/vendor/what-input.js"></script>
+    <script src="static/js/vendor/foundation.js"></script>
+    <script src="static/js/app.js"></script
+  </body>
+  </html>
+
